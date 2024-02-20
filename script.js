@@ -1,38 +1,45 @@
-//Arrays
+// Operadores aritméticos
+// + - * / **
 
-let familia = [true, 1, 23,'Nathália', 27 ];
-console.log(familia.length);
-console.log(familia[3]);
+let salario = 100;
 
-//Funções = verbo + substantivo
-let corSite = "azul";
-function resetaCor(cor, tonalidade){
-    corSite = cor + tonalidade;
+console.log(salario + salario);
 
-};
+//Opradores de incremento ou decremento
+let idade = 25;
+console.log(idade++);
+console.log(idade); //resultado 25 + 1 = 26
 
-console.log(corSite);
-resetaCor("Verde", " claro");
-console.log(corSite);
+console.log(idade--)
+console.log(idade); //resultado 25 - 1 = 24
 
-//Diferentes tipos de funções
-   // Realizar uma tarefa e não devolver nada
-   function dizerNome(){
-    console.log('Nathy');
-   }
+//Operadores de atribuição
+let valorTecladoGamer = 100;
+valorTecladoGamer += valorTecladoGamer; //valorTecladoGamer = valorTecladoGamer + valorTecladoGamer
+console.log(valorTecladoGamer); //resultado 200
 
-   dizerNome();
+let valorMouse = 100;
+valorMouse -= valorMouse;
+console.log(valorMouse); //resultado 0
 
-   // Realiza uma tarefa e retorna algo
-   function multiplicarPorDois(valor){
-    return valor * 2;
-   }
+//Operadores de igualdade
+  //Igualdade estrita
+  console.log(1 === 1); //true = comparando valores e tipos 
+  console.log ('1' === 1); //false = uma string não é igual um número
 
-   console.log(multiplicarPorDois(5));
+  //Igualdade solta
+  console.log (1 == 1); //true = copara valores e ignora os tipos
+  console.log('1' == 1); //true = ignora os tipos e iguala os valores
 
-   let resultado = multiplicarPorDois(5);
-   console.log(resultado);
+//Operador ternário
+   //Se o cliente tiver mais que 100 pontos = premium, se menos, comum
+   let pontos = 100;
+   let tipo = pontos > 100 ? 'premium' : 'comum';
+   console.log(tipo); //resultado: comum
 
-   //ok
-   
+      
+
+
+
+
 
