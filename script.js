@@ -1,13 +1,38 @@
-let idade = 27;
-console.log(idade);
+//Arrays
 
-let nome = "Nathália";
-console.log(nome);
+let familia = [true, 1, 23,'Nathália', 27 ];
+console.log(familia.length);
+console.log(familia[3]);
 
-let profissao = "Programadora";
-console.log(profissao);
+//Funções = verbo + substantivo
+let corSite = "azul";
+function resetaCor(cor, tonalidade){
+    corSite = cor + tonalidade;
 
-const valorIngressoAdulto = 20;
-console.log(valorIngressoAdulto);
+};
 
+console.log(corSite);
+resetaCor("Verde", " claro");
+console.log(corSite);
+
+//Diferentes tipos de funções
+   // Realizar uma tarefa e não devolver nada
+   function dizerNome(){
+    console.log('Nathy');
+   }
+
+   dizerNome();
+
+   // Realiza uma tarefa e retorna algo
+   function multiplicarPorDois(valor){
+    return valor * 2;
+   }
+
+   console.log(multiplicarPorDois(5));
+
+   let resultado = multiplicarPorDois(5);
+   console.log(resultado);
+
+   //ok
+   
 
