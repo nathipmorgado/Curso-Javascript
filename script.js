@@ -1,43 +1,26 @@
-// Operadores aritméticos
-// + - * / **
+// Operador lógico e (&&)
+//Retorna true se os dois operadores forem true
 
-let salario = 100;
+console.log(true && true); //E
+console.log(false && true); //E
+console.log(false && false); //E
+console.log( false || true); //Ou
+console.log(true || true); //Ou
 
-console.log(salario + salario);
+let maiorDeIdade = true;
+let possuiCarteiraDeTrabalho = true;
+let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
+console.log(podeAplicar);
 
-//Opradores de incremento ou decremento
-let idade = 25;
-console.log(idade++);
-console.log(idade); //resultado 25 + 1 = 26
+let menorDeIdade = false;
+let naoPossuiCarteiraDeTrabalho = true;
+let podePrestar = menorDeIdade || naoPossuiCarteiraDeTrabalho;
+console.log(podePrestar);
 
-console.log(idade--)
-console.log(idade); //resultado 25 - 1 = 24
+//Operador not (!)
+let candidatoRecusado = !podeAplicar
+console.log(candidatoRecusado);
 
-//Operadores de atribuição
-let valorTecladoGamer = 100;
-valorTecladoGamer += valorTecladoGamer; //valorTecladoGamer = valorTecladoGamer + valorTecladoGamer
-console.log(valorTecladoGamer); //resultado 200
-
-let valorMouse = 100;
-valorMouse -= valorMouse;
-console.log(valorMouse); //resultado 0
-
-//Operadores de igualdade
-  //Igualdade estrita
-  console.log(1 === 1); //true = comparando valores e tipos 
-  console.log ('1' === 1); //false = uma string não é igual um número
-
-  //Igualdade solta
-  console.log (1 == 1); //true = copara valores e ignora os tipos
-  console.log('1' == 1); //true = ignora os tipos e iguala os valores
-
-//Operador ternário
-   //Se o cliente tiver mais que 100 pontos = premium, se menos, comum
-   let pontos = 100;
-   let tipo = pontos > 100 ? 'premium' : 'comum';
-   console.log(tipo); //resultado: comum
-
-      
 
 
 
